@@ -9,9 +9,8 @@ include_once 'db_sql.php';
 <div class="topnav">
   <a class="active" href="index.php">Home</a>
   <a class="active" href="animals.php">Pets</a>
-  <a class="active" href="location.php">Locations</a>
   <a class="active" href="owner.php">Owners</a>
-  
+  <a class="active" href="location.php">Locations</a>
 </div>
 <style>
 /* Add a black background color to the top navigation */
