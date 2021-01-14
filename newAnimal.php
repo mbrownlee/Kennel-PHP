@@ -12,7 +12,7 @@
     ?>
     <h2>New Pet Form</h2>
 
-    <form action="add.php" method="post">
+    <form action="animals.php" method="post">
         Location: <select name="id" value=$row[id]>
             <?php
             while ($row = mysqli_fetch_array($result)) {
