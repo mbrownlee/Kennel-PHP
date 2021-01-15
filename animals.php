@@ -31,13 +31,14 @@
     $phone = $_POST['phone'];
 
 
-    $user_ins2 = "INSERT INTO owner (first_name, last_name, phone) VALUES ('$first_name', '$last_name', '$phone');";
-    $user_ins_call2 = mysqli_query($init, $user_ins2);
-    $user_ins = "INSERT INTO animals (name, breed, owner_id = (SELECT owner.id FROM owner WHERE animals.owner_id = owner.id)) VALUES ('$name', '$breed', $owner_id);";
+    // $user_ins2 = "INSERT INTO owner (first_name, last_name, phone) VALUES ('$first_name', '$last_name', '$phone');";
+    // $user_ins_call2 = mysqli_query($init, $user_ins2);
+    // $user_ins = "INSERT INTO animals (name, breed, owner_id = (SELECT owner.id FROM owner WHERE animals.owner_id = owner.id)) VALUES ('$name', '$breed', $owner_id);";
+    $user_ins = "INSERT INTO animals (name, breed, owner_id) VALUES ('$name', '$breed', 10);";
     $user_ins_call = mysqli_query($init, $user_ins);
 
     ?>
-    <!-- button takes to new animal form -->
+    <!-- button to new animal form -->
     <form action="newAnimal.php">
         <br>
         <button type="submit" name="submit" value="submit" class="btn">Add New Pet</button>
